@@ -7,18 +7,33 @@
 
 import SwiftUI
 
-struct ContentView: View {
+/// Root router — switches between onboarding phases and the main tab app.
+struct RootView: View {
+    @Environment(AppState.self) private var app
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            switch app.phase {
+            case .splash:
+                SplashView()
+            case .onboarding:
+                OnboardingView()
+            case .permissionMic:
+                PermissionMicView()
+            case .permissionSpeech:
+                PermissionSpeechView()
+            case .permissionDenied:
+                PermissionDeniedView()
+            case .main:
+                MainTabView()
+            }
         }
-        .padding()
+        .animation(.easeInOut(duration: 0.35), value: app.phase)
     }
 }
 
 #Preview {
-    ContentView()
+    RootView()
+        .environment(AppState())
+        .environment(SpeechService())
 }

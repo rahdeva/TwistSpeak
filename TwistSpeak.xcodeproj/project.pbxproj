@@ -256,6 +256,8 @@
 				DEVELOPMENT_TEAM = 9W3BCB8Z6Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "TwistSpeak uses your microphone to hear your practice attempts so it can check which words came through clearly.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "TwistSpeak uses speech recognition to turn what you say into text so it can highlight the words you nailed and the ones to practice.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +290,8 @@
 				DEVELOPMENT_TEAM = 9W3BCB8Z6Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "TwistSpeak uses your microphone to hear your practice attempts so it can check which words came through clearly.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "TwistSpeak uses speech recognition to turn what you say into text so it can highlight the words you nailed and the ones to practice.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
